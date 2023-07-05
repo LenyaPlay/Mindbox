@@ -16,7 +16,7 @@ namespace Mindbox
             this.a = a;
             this.b = b;
             this.c = c;
-            //Обработка на нули нужна? Если нужна,то можно так
+
             if (a < 0 || b < 0 || c < 0 || a + b <= c || a + c <= b || c + b <= a)
                 throw new ArgumentException("Такого треугольника не существует");
         }
